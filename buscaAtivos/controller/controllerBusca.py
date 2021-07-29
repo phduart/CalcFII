@@ -22,7 +22,7 @@ def exportCSV(listaDeAtivos):
     field_names = ['nome', 'setor', 'dividendoPago']
     x = datetime.datetime.now()
     nomeCSV = 'CapturaDadosFii-' + x.strftime("%Y-%m-%d") + '.csv'
-    with open(nomeCSV, 'w') as csvfile:
+    with open('capturaDados.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=field_names)
         writer.writeheader()
         writer.writerows(listaDeAtivos)

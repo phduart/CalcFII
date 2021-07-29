@@ -14,12 +14,15 @@ tbody = table.find_element_by_tag_name("tbody")
 rows = tbody.find_elements_by_tag_name("tr")
 print("--------- PROCESSANDO ATIVOS ---------")
 listaDeAtivos = controller.processListaAtivo(rows)
-print("--------- FECHANDO BROWSER -----------")
 wd.close()
 print("--------- EXPORTANDO ATIVOS ----------")
-nomeCSV = controller.exportCSV(listaDeAtivos)
-shutil.move("C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\" + nomeCSV,
-            "C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\captura")
-os.rename("C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\captura" + nomeCSV,
-          "C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\captura\\capturaDados.csv")
+controller.exportCSV(listaDeAtivos)
+try:
+    shutil.move("C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\capturaDados.csv",
+                "C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\captura")
+    print("--------- ARQUIVO CRIADO -------------")
+except:
+    print("--------- REPLACE ARQUIVO ------------")
+    os.replace("C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\capturaDados.csv",
+              "C:\\Users\\Paulo Duarte\\Documents\\GitHub\\CalcFII\\buscaAtivos\\captura\\capturaDados.csv")
 print("--------------------- FIM ---------------------")

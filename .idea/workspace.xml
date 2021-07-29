@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c74db2c-e5d0-44f4-b475-90f8b1c1b419" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/buscaAtivos/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buscaAtivos/controller/controllerBusca.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processaAtivos/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processaAtivos/controller/controllerFii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscaAtivos/CapturaDadosFii-2021-07-28.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscaAtivos/CapturaDadosFii-2021-07-29.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/buscaAtivos/buscaFii.py" beforeDir="false" afterPath="$PROJECT_DIR$/buscaAtivos/buscaFii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscaAtivos/captura/capturaDados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/buscaAtivos/captura/capturaDados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscaAtivos/controller/controllerBusca.py" beforeDir="false" afterPath="$PROJECT_DIR$/buscaAtivos/controller/controllerBusca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buscaAtivos/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/buscaAtivos/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processaAtivos/processaFii.py" beforeDir="false" afterPath="$PROJECT_DIR$/processaAtivos/processaFii.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.processaFii">
+  <component name="RunManager" selected="Python.buscaFii (1)">
     <configuration name="buscaFii (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CalcFII" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,9 +143,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.buscaFii (1)" />
         <item itemvalue="Python.processaFii" />
         <item itemvalue="Python.teste" />
-        <item itemvalue="Python.buscaFii (1)" />
         <item itemvalue="Python.testeLogic" />
         <item itemvalue="Python.buscaFii" />
       </list>
